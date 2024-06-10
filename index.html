@@ -7,6 +7,7 @@
     <title>AI Recipe Generator</title>
   </head>
   <body>
+    <div class="container">
     <header>
     <h1>AI Recipe Generator</h1>
     </header>
@@ -17,11 +18,12 @@
     placeholder="Search an ingredient" 
     autofocus 
     required
-    autocomplete="off"></input>
-    <input type="submit" />
+    autocomplete="off"
+    class="search-bar"></input>
+    <input type="submit" class="submit-button" />
 </form>
 <br/>
-<div id="recipe"> 
+<div class="recipe"> 
     The recipe will go here
     <br /> 
      The recipe will go here
@@ -49,6 +51,7 @@
         >Netlify</a
       >
     </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
