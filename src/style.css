@@ -56,6 +56,11 @@ form {
   border-radius: 15px;
 }
 
+.recipe h1 {
+  font-size: 32px;
+  color: rgb(13, 70, 78);
+}
+
 footer {
   font-size: 12px;
   text-align: center;
