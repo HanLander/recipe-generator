@@ -1,6 +1,4 @@
 function displayRecipe(response) {
-  console.log("recipe generated");
-
   new Typewriter("#recipe", {
     strings: response.data.answer,
     autoStart: true,
@@ -23,9 +21,6 @@ function generateRecipe(event) {
   recipeElement.classList.remove("hidden");
   recipeElement.innerHTML = `<div class="blink"> ⏳ Generating recipe...</div>`;
 
-  console.log("generating recipe");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
   axios.get(apiURL).then(displayRecipe);
 }
 
