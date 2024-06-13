@@ -1,9 +1,13 @@
 body {
-  background-color: honeydew;
+  background: url("https://images.pexels.com/photos/1414651/pexels-photo-1414651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
-  margin: 120px auto;
+  margin: 100px auto;
   max-width: 600px;
   border-radius: 5px;
   padding: 20px;
@@ -18,19 +22,24 @@ h1 {
   font-size: 40px;
   line-height: 1.5;
   font-family: Helvetica, Arial, sans-serif;
+  color: black;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 15px;
+  padding-bottom: 20px;
 }
 
 form {
   text-align: center;
   padding: 25px;
-  border-radius: 15px;
   display: flex;
-  background-color: white;
 }
 
 .search-bar {
   padding: 10px;
-  border: 1px solid black;
+  border: 1px solid #f1e8ea;
   width: 80%;
   font-size: 14px;
   border-radius: 12px;
@@ -42,15 +51,23 @@ form {
   border-radius: 12px;
   margin-left: 8px;
   background-color: white;
-  border: 1px solid black;
+  border: 1px solid #f1e8ea;
   width: 15%;
   font-size: 14px;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-left: 28px;
+  font-size: 12px;
+  opacity: 0.8;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .recipe {
   font-size: 14px;
   padding: 25px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 20px;
   background-color: white;
   border-radius: 15px;
@@ -58,7 +75,11 @@ form {
 
 .recipe h1 {
   font-size: 32px;
-  color: rgb(13, 70, 78);
+  color: black;
+}
+
+.hidden {
+  display: none;
 }
 
 footer {
@@ -67,6 +88,22 @@ footer {
   margin-top: 35px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 a {
   color: black;
+}
+
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

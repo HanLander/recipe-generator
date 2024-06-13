@@ -15,9 +15,10 @@
     </header>
 
     <main> 
+      <div class="form-container">
 <form id="recipe-generator-form">
     <input type="text" 
-    placeholder="Search an ingredient" 
+    placeholder="Search a recipe" 
     autofocus 
     required
     autocomplete="off"
@@ -25,8 +26,11 @@
     id="user-instructions"></input>
     <input type="submit" class="submit-button" />
 </form>
+<div class="hint">e.g. roast chicken, lemon cake, macaroni cheese </div>
+</div>
+
 <br/>
-<div class="recipe" id="recipe"> 
+<div class="recipe hidden" id="recipe"> 
     
    
 </div>

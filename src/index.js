@@ -19,6 +19,10 @@ function generateRecipe(event) {
   let prompt = `User instructions: Generate a recipe based on the ingredient entered ${instructionsInput.value} using the metric measurements`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let recipeElement = document.querySelector("#recipe");
+  recipeElement.classList.remove("hidden");
+  recipeElement.innerHTML = `<div class="blink"> ⏳ Generating recipe...</div>`;
+
   console.log("generating recipe");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
